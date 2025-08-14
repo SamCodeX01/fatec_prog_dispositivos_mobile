@@ -11,12 +11,14 @@ public class Main {
 
         System.out.print("Digite o dia do seu nascimento: ");
         diaNascimento = scan.nextInt();
+
         if(diaNascimento < 1 || diaNascimento > 31){
             System.out.println("Digite um dia válido!");
             return;
         }
         System.out.print("Digite o mês do nascimento: ");
         mesNascimento = scan.nextInt();
+
         if(mesNascimento<1 || mesNascimento > 12){
             System.out.println("Digite um mês válido!");
             return;
@@ -26,7 +28,9 @@ public class Main {
 
         idade = anoAtual-anoNascimento;
 
+        //Conta apenas os meses completos antes do mês de nascimento e Adiciona os dias vividos no mês de nascimento.
         dias = (idade*365)  + ((mesNascimento-1)*30)+ diaNascimento;
+
         meses = (12*idade) + mesNascimento;
 
         System.out.println("\nVocê tem: \n" + idade + " anos.");

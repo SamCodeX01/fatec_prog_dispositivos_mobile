@@ -22,34 +22,22 @@ public class Main {
         peso = scan.nextDouble();
         System.out.print("Digite a sua altura: ");
         altura = scan.nextDouble();
-        imc = (peso / (altura*altura));
+        imc = (peso / (altura * altura));
+        System.out.printf("Seu imc calculado: %.2f%n", imc);
 
-        if(imc <=  18.5){
+        if (imc < 18.5) {
             System.out.println("Abaixo do peso!");
-        }
-        else if (imc >= 18.5 && imc <=24.9) {
+        } else if (imc >= 18.5 && imc <= 24.9) {
             System.out.println("Peso normal");
-        }
-        else if (imc >= 25 && imc <= 29.9){
+        } else if (imc >= 25 && imc <= 29.9) {
             System.out.println("Sobrepeso");
-        }
-        else if(imc >= 30 && imc < 34.9){
+        } else if (imc >= 30 && imc < 34.9) {
             System.out.println("Obesidade grau I");
-        }
-        else if(imc >= 35 && imc <= 39.9){
+        } else if (imc >= 35 && imc <= 39.9) {
             System.out.println("Obesidade grau II");
-        }
-        else if(imc >=40){
+        } else if (imc >= 40) {
             System.out.println("Obesidade grau III ou mórbida*/");
         }
-
-     /*   O valor do IMC indica a situação em que a pessoa se encontra:
-        - Abaixo de 18,5:
-                - Entre 18,5 e 24,9: Peso normal
-        - Entre 25 e 29,9: Sobrepeso
-                - Entre 30 e 34,9: Obesidade grau I
-                - Entre 35 e 39,9: Obesidade grau II
-                - 40 ou mais: Obesidade grau III ou mórbida*/
-
     }
+
 }

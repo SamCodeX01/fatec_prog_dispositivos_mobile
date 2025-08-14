@@ -8,6 +8,7 @@ N números aleatórios [entre 0 e 99] sem repetição;
 exibir os números gerados em ordem crescente.
 Onde:
       N - representa a quantidade de números solicitado pelo usuário.*/
+
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
