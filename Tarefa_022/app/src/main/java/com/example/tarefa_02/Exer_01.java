@@ -27,16 +27,16 @@ public class Exer_01 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer01);
 
-        edDiaNascimento = findViewById(R.id.edCateto1);
+        edDiaNascimento = findViewById(R.id.edQtdNumeros);
         edMesNascimento = findViewById(R.id.edCateto2);
         edAnoNascimento = findViewById(R.id.edAnoNascimento);
-        btConverter = findViewById(R.id.btCalcular);
-        btLimpar = findViewById(R.id.btLimpar2);
-        btVoltar = findViewById(R.id.btVoltar2);
-        btAvancar1 = findViewById(R.id.btAvancar2);
+        btConverter = findViewById(R.id.btGerarNumeros);
+        btLimpar = findViewById(R.id.btLimpar3);
+        btVoltar = findViewById(R.id.btVoltar3);
+        btAvancar1 = findViewById(R.id.btAvancar3);
         tvMostrarIdade = findViewById(R.id.tvResultadoHipotenusa);
         tvMostrarMeses = findViewById(R.id.tvMostrarMeses);
-        tvMostrarDias = findViewById(R.id.tvMostrarDias);
+        tvMostrarDias = findViewById(R.id.tvMostrarNumerosGerados);
 
         btConverter.setOnClickListener(new View.OnClickListener() {
             @Override

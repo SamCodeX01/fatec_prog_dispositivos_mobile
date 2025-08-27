@@ -41,7 +41,7 @@ public class Exer_04 extends AppCompatActivity {
 //        }
 //    }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btAvancar), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;

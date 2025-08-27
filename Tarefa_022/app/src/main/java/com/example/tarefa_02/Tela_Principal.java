@@ -49,6 +49,20 @@ public class Tela_Principal extends AppCompatActivity {
                 startActivity(intent);
                 }
             });
+        btExe03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tela_Principal.this,Exer_03.class);
+                startActivity(intent);
+                }
+            });
+        btExe04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tela_Principal.this,Exer_04.class);
+                startActivity(intent);
+                }
+            });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

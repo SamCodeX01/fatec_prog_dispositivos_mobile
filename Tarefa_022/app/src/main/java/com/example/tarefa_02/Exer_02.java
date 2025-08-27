@@ -1,6 +1,7 @@
 package com.example.tarefa_02;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,12 +27,12 @@ public class Exer_02 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer02);
 
-        edCateto1 = findViewById(R.id.edCateto1);
+        edCateto1 = findViewById(R.id.edQtdNumeros);
         edCateto2 = findViewById(R.id.edCateto2);
-        btCalcular = findViewById(R.id.btCalcular);
-        btLimpar2 = findViewById(R.id.btLimpar2);
-        btVoltar2 = findViewById(R.id.btVoltar2);
-        btAvancar2 = findViewById(R.id.btAvancar2);
+        btCalcular = findViewById(R.id.btGerarNumeros);
+        btLimpar2 = findViewById(R.id.btLimpar3);
+        btVoltar2 = findViewById(R.id.btVoltar3);
+        btAvancar2 = findViewById(R.id.btAvancar3);
         tvResultadoHipotenusa = findViewById(R.id.tvResultadoHipotenusa);
 
         btCalcular.setOnClickListener(new View.OnClickListener() {
@@ -47,9 +48,15 @@ public class Exer_02 extends AppCompatActivity {
                 double soma = cat1+cat2;
                 hipotenusa = Math.sqrt(soma);
 
-                System.out.println("A hipotenusa desse triângulo mede: " + hipotenusa);
-               // tvResultadoHipotenusa.setText("A hipotenusa desse triângulo mede: " + hipotenusa);
                 tvResultadoHipotenusa.setText("A hipotenusa desse triângulo mede: " + String.format("%.2f", hipotenusa));
+            }
+        });
+
+        btAvancar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_02.this,Exer_03.class);
+                startActivity(intent);
             }
         });
 
