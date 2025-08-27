@@ -27,14 +27,14 @@ public class Exer_01 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer01);
 
-        edDiaNascimento = findViewById(R.id.edDiaNascimento);
-        edMesNascimento = findViewById(R.id.edMesNascimento);
+        edDiaNascimento = findViewById(R.id.edCateto1);
+        edMesNascimento = findViewById(R.id.edCateto2);
         edAnoNascimento = findViewById(R.id.edAnoNascimento);
-        btConverter = findViewById(R.id.btConverter);
-        btLimpar = findViewById(R.id.btLimpar);
-        btVoltar = findViewById(R.id.btVoltar);
-        btAvancar1 = findViewById(R.id.btAvancar1);
-        tvMostrarIdade = findViewById(R.id.tvMostrarIdade);
+        btConverter = findViewById(R.id.btCalcular);
+        btLimpar = findViewById(R.id.btLimpar2);
+        btVoltar = findViewById(R.id.btVoltar2);
+        btAvancar1 = findViewById(R.id.btAvancar2);
+        tvMostrarIdade = findViewById(R.id.tvResultadoHipotenusa);
         tvMostrarMeses = findViewById(R.id.tvMostrarMeses);
         tvMostrarDias = findViewById(R.id.tvMostrarDias);
 
@@ -66,11 +66,11 @@ public class Exer_01 extends AppCompatActivity {
 
                 meses = (12*idade) + mesNascimento;
 
-            tvMostrarIdade.setText(String.valueOf(idade));
+            tvMostrarIdade.setText("Idade: " + String.valueOf(idade));
 
-            tvMostrarMeses.setText(String.valueOf(meses));
+            tvMostrarMeses.setText("Meses: " + String.valueOf(meses));
 
-            tvMostrarDias.setText(String.valueOf(dias));
+            tvMostrarDias.setText("Dias: " + String.valueOf(dias));
             }
         });
 
@@ -110,5 +110,7 @@ public class Exer_01 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
     }
 }

@@ -8,7 +8,7 @@
     tools:context=".Exer_01">
 
     <EditText
-        android:id="@+id/edDiaNascimento"
+        android:id="@+id/edCateto1"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
@@ -33,7 +33,7 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
+        app:layout_constraintTop_toBottomOf="@+id/edCateto2" />
 
     <TextView
         android:id="@+id/textView"
@@ -49,14 +49,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btConverter"
+        android:id="@+id/btCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Converter"
-        app:layout_constraintEnd_toStartOf="@+id/btLimpar"
+        app:layout_constraintEnd_toStartOf="@+id/btLimpar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
 
@@ -70,10 +70,10 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarIdade" />
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoHipotenusa" />
 
     <Button
-        android:id="@+id/btLimpar"
+        android:id="@+id/btLimpar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -81,11 +81,11 @@
         android:gravity="center"
         android:text="Limpar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btConverter"
+        app:layout_constraintStart_toEndOf="@+id/btCalcular"
         app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
 
     <TextView
-        android:id="@+id/tvMostrarIdade"
+        android:id="@+id/tvResultadoHipotenusa"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
@@ -94,10 +94,10 @@
         android:gravity="center|center_horizontal|center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btConverter" />
+        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
 
     <EditText
-        android:id="@+id/edMesNascimento"
+        android:id="@+id/edCateto2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
@@ -108,10 +108,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edDiaNascimento" />
+        app:layout_constraintTop_toBottomOf="@+id/edCateto1" />
 
     <Button
-        android:id="@+id/btAvancar1"
+        android:id="@+id/btAvancar2"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
@@ -120,7 +120,7 @@
         android:gravity="center"
         android:text="Avançar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btVoltar"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar2"
         app:layout_constraintTop_toBottomOf="@+id/tvMostrarDias" />
 
     <TextView
@@ -136,14 +136,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tvMostrarMeses" />
 
     <Button
-        android:id="@+id/btVoltar"
+        android:id="@+id/btVoltar2"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Voltar"
-        app:layout_constraintEnd_toStartOf="@+id/btAvancar1"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMostrarDias" />
 

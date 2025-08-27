@@ -8,32 +8,97 @@
     tools:context=".Exer_02">
 
     <EditText
-        android:id="@+id/edDiaNascimento"
+        android:id="@+id/edCateto1"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="68dp"
         android:ems="10"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:hint="Dia do seu nascimento: "
+        android:hint="Digite o valor do cateto 1:"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/btVoltar2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Voltar"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoHipotenusa" />
+
+    <Button
+        android:id="@+id/btAvancar2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Avançar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar2"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoHipotenusa" />
+
+    <Button
+        android:id="@+id/btLimpar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Limpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/edCateto2" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Calcular"
+        app:layout_constraintEnd_toStartOf="@+id/btLimpar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCateto2" />
+
+    <TextView
+        android:id="@+id/tvResultadoHipotenusa"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="A hipotenusa desse triângulo mede: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
+
     <EditText
-        android:id="@+id/edAnoNascimento"
+        android:id="@+id/edCateto2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:hint="Ano do seu nascimento: "
+        android:hint='Digite o valor do cateto 2:'
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
+        app:layout_constraintTop_toBottomOf="@+id/edCateto1" />
 
     <TextView
         android:id="@+id/textView"
@@ -42,112 +107,10 @@
         android:layout_marginTop="56dp"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:text="Exercício 02: "
+        android:text="Exercício 02: Cálculo Hipotenusa"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btConverter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Converter"
-        app:layout_constraintEnd_toStartOf="@+id/btLimpar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
-
-    <TextView
-        android:id="@+id/tvMostrarMeses"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:background="#C4ACED"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarIdade" />
-
-    <Button
-        android:id="@+id/btLimpar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Limpar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btConverter"
-        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
-
-    <TextView
-        android:id="@+id/tvMostrarIdade"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="36dp"
-        android:background="#C4ACED"
-        android:foregroundGravity="center"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btConverter" />
-
-    <EditText
-        android:id="@+id/edMesNascimento"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:hint='Mês do nascimento: '
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edDiaNascimento" />
-
-    <Button
-        android:id="@+id/btAvancar1"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
-        android:width="80dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Avançar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btVoltar"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarDias" />
-
-    <TextView
-        android:id="@+id/tvMostrarDias"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:background="#C4ACED"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarMeses" />
-
-    <Button
-        android:id="@+id/btVoltar"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Voltar"
-        app:layout_constraintEnd_toStartOf="@+id/btAvancar1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarDias" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

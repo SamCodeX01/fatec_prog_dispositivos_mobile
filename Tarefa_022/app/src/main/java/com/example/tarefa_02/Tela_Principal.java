@@ -37,9 +37,15 @@ public class Tela_Principal extends AppCompatActivity {
         btExe01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Tela_Principal.this, "Botão clicado!", Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(Tela_Principal.this,Exer_01.class);
+                startActivity(intent);
+                }
+            });
+
+        btExe02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tela_Principal.this,Exer_02.class);
                 startActivity(intent);
                 }
             });
