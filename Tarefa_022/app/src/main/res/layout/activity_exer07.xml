@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btAvancar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exer_07">
+
+    <EditText
+        android:id="@+id/edDiaNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Dia do seu nascimento: "
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edAnoNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Ano do seu nascimento: "
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Exercício 01: Java Conversor Idade"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Converter"
+        app:layout_constraintEnd_toStartOf="@+id/btLimpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
+
+    <TextView
+        android:id="@+id/tvMostrarMeses"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarIdade" />
+
+    <Button
+        android:id="@+id/btLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Limpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btConverter"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
+
+    <TextView
+        android:id="@+id/tvMostrarIdade"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btConverter" />
+
+    <EditText
+        android:id="@+id/edMesNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint='Mês do nascimento: '
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edDiaNascimento" />
+
+    <Button
+        android:id="@+id/btAvancar1"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Avançar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarDias" />
+
+    <TextView
+        android:id="@+id/tvMostrarDias"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarMeses" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Voltar"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarDias" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
