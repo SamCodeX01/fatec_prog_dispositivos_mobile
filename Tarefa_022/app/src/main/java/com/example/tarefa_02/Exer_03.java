@@ -30,12 +30,12 @@ public class Exer_03 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer03);
 
-        edQtdNumeros = findViewById(R.id.edPeso);
-        btGerarNumeros = findViewById(R.id.btCalcular);
-        btLimpar3 = findViewById(R.id.btLimpar4);
-        btVoltar3 = findViewById(R.id.btVoltar4);
-        btAvancar3 = findViewById(R.id.btAvancar4);
-        tvMostrarNumerosGerados = findViewById(R.id.tvMostrarNumerosGerados);
+        edQtdNumeros = findViewById(R.id.edDiaNascimento);
+        btGerarNumeros = findViewById(R.id.btValidarCpf);
+        btLimpar3 = findViewById(R.id.btLimpar7);
+        btVoltar3 = findViewById(R.id.btVoltar7);
+        btAvancar3 = findViewById(R.id.btAvancar1);
+        tvMostrarNumerosGerados = findViewById(R.id.tvMostrarDias);
 
         btGerarNumeros.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,8 +90,11 @@ public class Exer_03 extends AppCompatActivity {
                 }
 
                 // Aqui mostra os números ordenados
+                tvMostrarNumerosGerados.setText("Números em ordem crescente: ");
+                String aux2;
                 for (int num : numeros) {
-                    tvMostrarNumerosGerados.setText("\nNúmeros em ordem crescente:" + String.valueOf(num));
+                    aux2 = tvMostrarNumerosGerados.getText().toString();
+                    tvMostrarNumerosGerados.setText(aux2 + "\n" + String.valueOf(num));
                 }
             }
         });

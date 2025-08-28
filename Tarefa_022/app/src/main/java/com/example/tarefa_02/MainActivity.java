@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         new Handler().postDelayed(() ->{
             startActivity(new Intent(MainActivity.this, Tela_Principal.class));
+            finish();
         },4000);
 
 

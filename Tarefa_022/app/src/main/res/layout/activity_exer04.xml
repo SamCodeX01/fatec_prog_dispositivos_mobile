@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btAvancar"
+    android:id="@+id/btAvancar7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Exer_04">
 
     <EditText
-        android:id="@+id/edPeso"
+        android:id="@+id/edDiaNascimento"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="44dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btLimpar4"
+        android:id="@+id/btLimpar7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
@@ -44,23 +44,23 @@
         android:gravity="center"
         android:text="Limpar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btCalcular"
-        app:layout_constraintTop_toBottomOf="@+id/edAltura" />
+        app:layout_constraintStart_toEndOf="@+id/btValidarCpf"
+        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
 
     <Button
-        android:id="@+id/btCalcular"
+        android:id="@+id/btValidarCpf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Converter"
-        app:layout_constraintEnd_toStartOf="@+id/btLimpar4"
+        app:layout_constraintEnd_toStartOf="@+id/btLimpar7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
 
     <TextView
-        android:id="@+id/tvResultadoImc"
+        android:id="@+id/tvMostrarIdade"
         android:layout_width="220dp"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
@@ -70,10 +70,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
+        app:layout_constraintTop_toBottomOf="@+id/btValidarCpf" />
 
     <EditText
-        android:id="@+id/edAltura"
+        android:id="@+id/edMesNascimento"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="60dp"
@@ -85,10 +85,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/edDiaNascimento" />
 
     <Button
-        android:id="@+id/btAvancar4"
+        android:id="@+id/btAvancar1"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="65dp"
@@ -97,19 +97,19 @@
         android:gravity="center"
         android:text="Avançar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btVoltar4"
-        app:layout_constraintTop_toBottomOf="@+id/tvResultadoImc" />
+        app:layout_constraintStart_toEndOf="@+id/btVoltar7"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarIdade" />
 
     <Button
-        android:id="@+id/btVoltar4"
+        android:id="@+id/btVoltar7"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="65dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Voltar"
-        app:layout_constraintEnd_toStartOf="@+id/btAvancar4"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvResultadoImc" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarIdade" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

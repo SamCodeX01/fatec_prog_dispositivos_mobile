@@ -1,5 +1,6 @@
 package com.example.tarefa_02;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,25 +19,26 @@ import java.util.Calendar;
 
 public class Exer_01 extends AppCompatActivity {
     EditText edDiaNascimento, edMesNascimento, edAnoNascimento;
-    Button btConverter, btLimpar, btVoltar, btAvancar1;
+    Button btConverter, btLimpar1, btVoltar1, btAvancar1;
     TextView tvMostrarIdade, tvMostrarMeses, tvMostrarDias;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer01);
 
-        edDiaNascimento = findViewById(R.id.edPeso);
-        edMesNascimento = findViewById(R.id.edAltura);
+        edDiaNascimento = findViewById(R.id.edDiaNascimento);
+        edMesNascimento = findViewById(R.id.edMesNascimento);
         edAnoNascimento = findViewById(R.id.edAnoNascimento);
-        btConverter = findViewById(R.id.btCalcular);
-        btLimpar = findViewById(R.id.btLimpar4);
-        btVoltar = findViewById(R.id.btVoltar4);
-        btAvancar1 = findViewById(R.id.btAvancar4);
-        tvMostrarIdade = findViewById(R.id.tvResultadoImc);
+        btConverter = findViewById(R.id.btConverter);
+        btLimpar1 = findViewById(R.id.btLimpar1);
+        btVoltar1 = findViewById(R.id.btVoltar1);
+        btAvancar1 = findViewById(R.id.btAvancar1);
+        tvMostrarIdade = findViewById(R.id.tvMostrarIdade);
         tvMostrarMeses = findViewById(R.id.tvMostrarMeses);
-        tvMostrarDias = findViewById(R.id.tvMostrarNumerosGerados);
+        tvMostrarDias = findViewById(R.id.tvMostrarDias);
 
         btConverter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +85,7 @@ public class Exer_01 extends AppCompatActivity {
             }
         });
 
-        btLimpar.setOnClickListener(new View.OnClickListener() {
+        btLimpar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 edDiaNascimento.setText("");
@@ -95,7 +97,7 @@ public class Exer_01 extends AppCompatActivity {
             }
         });
 
-        btVoltar.setOnClickListener(new View.OnClickListener() {
+        btVoltar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Exer_01.this, Tela_Principal.class);

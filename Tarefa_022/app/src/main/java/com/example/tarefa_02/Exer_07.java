@@ -1,6 +1,9 @@
 package com.example.tarefa_02;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,12 +13,29 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Exer_07 extends AppCompatActivity {
 
+    EditText edCpf;
+    TextView tvResultadoValidar;
+    Button btLimpar7, btVoltar7, btMenu7, btAvancar7, btValidarCpf;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer07);
 
+        edCpf = findViewById(R.id.edCpf);
+        edProva1 = findViewById(R.id.edProva1);
+        edTrabalhoT1 = findViewById(R.id.edTrabalhoT1);
+        edTrabalhoT2 = findViewById(R.id.edTrabalhoT2);
+        edMultidisciplinar = findViewById(R.id.edAnoNascimento);
+        tvResultadoNota = findViewById(R.id.tvResultadoNota);
+        btLimpar6 = findViewById(R.id.btLimpar7);
+        btVoltar6 = findViewById(R.id.btVoltar7);
+        btMenu6 = findViewById(R.id.btMenu7);
+        btAvancar6 = findViewById(R.id.btAvancar1);
+        btCalcularNota = findViewById(R.id.btValidarCpf);
 
 //        Scanner scan = new Scanner(System.in);
 //
