@@ -7,7 +7,7 @@
     tools:context=".Exer_01">
 
     <EditText
-        android:id="@+id/edDiaNascimento"
+        android:id="@+id/edCpf"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:ems="10"
@@ -74,7 +74,7 @@
         tools:layout_editor_absoluteY="192dp" />
 
     <TextView
-        android:id="@+id/tvMostrarIdade"
+        android:id="@+id/tvMostrarRegiao"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:background="#C4ACED"
@@ -104,7 +104,7 @@
         tools:layout_editor_absoluteY="501dp" />
 
     <Button
-        android:id="@+id/btAvancar1"
+        android:id="@+id/btAvancar7x"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
@@ -127,7 +127,7 @@
         android:gravity="center"
         android:text="MENU"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btAvancar1"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar7x"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btVoltar1" />
 

@@ -31,7 +31,7 @@ public class Exer_05 extends AppCompatActivity {
         btGerarSenha = findViewById(R.id.btValidarCpf);
         btLimpar5 = findViewById(R.id.btLimpar7);
         btVoltar5 = findViewById(R.id.btVoltar7);
-        btAvancar5 = findViewById(R.id.btAvancar1);
+        btAvancar5 = findViewById(R.id.btAvancar7x);
         tvSenhaGerada = findViewById(R.id.tvSenhaGerada);
         tvAguardeChamada = findViewById(R.id.tvResultadoNota);
         btMenu = findViewById(R.id.btMenu7);

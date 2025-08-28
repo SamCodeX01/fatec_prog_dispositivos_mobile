@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btAvancar7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Exer_05">
@@ -17,7 +16,7 @@
         android:gravity="center"
         android:text="Exercício 05: Gerador de Senhas"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/tvMostrarIdade"
+        app:layout_constraintBottom_toTopOf="@+id/tvMostrarRegiao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -50,7 +49,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/tvMostrarIdade"
+        android:id="@+id/tvMostrarRegiao"
         android:layout_width="249dp"
         android:layout_height="20dp"
         android:layout_marginStart="81dp"
@@ -141,7 +140,7 @@
         android:background="#C4ACED"
         android:foregroundGravity="center"
         android:gravity="center|center_horizontal|center_vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btAvancar1"
+        app:layout_constraintBottom_toTopOf="@+id/btAvancar7x"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSenhaGerada"
         app:layout_constraintVertical_bias="0.5" />
@@ -157,7 +156,7 @@
         android:text='1 - Caixa'
         app:layout_constraintBottom_toTopOf="@+id/Atendimento_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarIdade"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarRegiao"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
@@ -176,7 +175,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/btAvancar1"
+        android:id="@+id/btAvancar7x"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
@@ -199,7 +198,7 @@
         android:gravity="center"
         android:text="MENU"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btAvancar1"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar7x"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btVoltar7" />
 

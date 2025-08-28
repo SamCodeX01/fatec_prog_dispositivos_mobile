@@ -30,11 +30,11 @@ public class Exer_03 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer03);
 
-        edQtdNumeros = findViewById(R.id.edDiaNascimento);
+        edQtdNumeros = findViewById(R.id.edCpf);
         btGerarNumeros = findViewById(R.id.btValidarCpf);
         btLimpar3 = findViewById(R.id.btLimpar7);
         btVoltar3 = findViewById(R.id.btVoltar7);
-        btAvancar3 = findViewById(R.id.btAvancar1);
+        btAvancar3 = findViewById(R.id.btAvancar7x);
         tvMostrarNumerosGerados = findViewById(R.id.tvMostrarDias);
 
         btGerarNumeros.setOnClickListener(new View.OnClickListener() {

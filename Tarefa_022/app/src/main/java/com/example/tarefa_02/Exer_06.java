@@ -34,7 +34,7 @@ public class Exer_06 extends AppCompatActivity {
             btLimpar6 = findViewById(R.id.btLimpar7);
             btVoltar6 = findViewById(R.id.btVoltar7);
             btMenu6 = findViewById(R.id.btMenu7);
-            btAvancar6 = findViewById(R.id.btAvancar1);
+            btAvancar6 = findViewById(R.id.btAvancar7x);
             btCalcularNota = findViewById(R.id.btValidarCpf);
 
             btCalcularNota.setOnClickListener(new View.OnClickListener() {
