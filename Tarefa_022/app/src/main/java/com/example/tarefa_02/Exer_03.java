@@ -1,6 +1,7 @@
 package com.example.tarefa_02;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,19 +30,16 @@ public class Exer_03 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_exer03);
 
-        edQtdNumeros = findViewById(R.id.edQtdNumeros);
-        btGerarNumeros = findViewById(R.id.btGerarNumeros);
-        btLimpar3 = findViewById(R.id.btLimpar3);
-        btVoltar3 = findViewById(R.id.btVoltar3);
-        btAvancar3 = findViewById(R.id.btAvancar3);
+        edQtdNumeros = findViewById(R.id.edPeso);
+        btGerarNumeros = findViewById(R.id.btCalcular);
+        btLimpar3 = findViewById(R.id.btLimpar4);
+        btVoltar3 = findViewById(R.id.btVoltar4);
+        btAvancar3 = findViewById(R.id.btAvancar4);
         tvMostrarNumerosGerados = findViewById(R.id.tvMostrarNumerosGerados);
 
         btGerarNumeros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //System.out.print("Digite a quantidade de numeros: ");
-               // int n = scan.nextInt();
 
                 int n = Integer.parseInt(edQtdNumeros.getText().toString().trim());
 
@@ -95,6 +93,30 @@ public class Exer_03 extends AppCompatActivity {
                 for (int num : numeros) {
                     tvMostrarNumerosGerados.setText("\nNúmeros em ordem crescente:" + String.valueOf(num));
                 }
+            }
+        });
+
+        btLimpar3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edQtdNumeros.setText("");
+                tvMostrarNumerosGerados.setText("");
+            }
+        });
+
+        btVoltar3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_03.this, Exer_02.class);
+                startActivity(intent);
+            }
+        });
+
+        btAvancar3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_03.this, Exer_04.class);
+                startActivity(intent);
             }
         });
 

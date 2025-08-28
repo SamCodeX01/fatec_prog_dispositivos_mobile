@@ -8,7 +8,7 @@
     tools:context=".Exer_02">
 
     <EditText
-        android:id="@+id/edQtdNumeros"
+        android:id="@+id/edPeso"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="68dp"
@@ -23,19 +23,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btVoltar3"
+        android:id="@+id/btVoltar4"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="60dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Voltar"
-        app:layout_constraintEnd_toStartOf="@+id/btAvancar3"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvResultadoHipotenusa" />
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoImc" />
 
     <Button
-        android:id="@+id/btAvancar3"
+        android:id="@+id/btAvancar4"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="60dp"
@@ -44,11 +44,11 @@
         android:gravity="center"
         android:text="Avançar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btVoltar3"
-        app:layout_constraintTop_toBottomOf="@+id/tvResultadoHipotenusa" />
+        app:layout_constraintStart_toEndOf="@+id/btVoltar4"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoImc" />
 
     <Button
-        android:id="@+id/btLimpar3"
+        android:id="@+id/btLimpar4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -56,23 +56,23 @@
         android:gravity="center"
         android:text="Limpar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btGerarNumeros"
-        app:layout_constraintTop_toBottomOf="@+id/edCateto2" />
+        app:layout_constraintStart_toEndOf="@+id/btCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/edAltura" />
 
     <Button
-        android:id="@+id/btGerarNumeros"
+        android:id="@+id/btCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Calcular"
-        app:layout_constraintEnd_toStartOf="@+id/btLimpar3"
+        app:layout_constraintEnd_toStartOf="@+id/btLimpar4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edCateto2" />
+        app:layout_constraintTop_toBottomOf="@+id/edAltura" />
 
     <TextView
-        android:id="@+id/tvResultadoHipotenusa"
+        android:id="@+id/tvResultadoImc"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="52dp"
@@ -83,10 +83,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btGerarNumeros" />
+        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
 
     <EditText
-        android:id="@+id/edCateto2"
+        android:id="@+id/edAltura"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
@@ -98,7 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edQtdNumeros" />
+        app:layout_constraintTop_toBottomOf="@+id/edPeso" />
 
     <TextView
         android:id="@+id/textView"
