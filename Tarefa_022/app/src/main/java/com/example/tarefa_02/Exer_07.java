@@ -48,7 +48,7 @@ public class Exer_07 extends AppCompatActivity {
                 cpf = edCpf.getText().toString().trim().replaceAll("[^0-9]", "");
 
                 if (cpf.length() != 11) {
-                    System.out.println("CPF inválido! Digite apenas 11 digitos numéricos!");
+                   // System.out.println("CPF inválido! Digite apenas 11 digitos numéricos!");
                     Toast.makeText(Exer_07.this,"CPF inválido! Digite apenas 11 digitos numéricos!",Toast.LENGTH_LONG).show();
                     return;
                 }
