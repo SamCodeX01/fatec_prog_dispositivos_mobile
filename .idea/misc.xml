@@ -1,25 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/java-conversor-idade/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-01-java-conversor-idade/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-02-java-calculo-hipotenusa/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-03-java-gerador-numeros-unicos/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-04-java-calculadora-imc/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-05-java-gerador-senhas-atendimento/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-06-java-calculadora-notas-mobile/pom.xml" />
-        <option value="$PROJECT_DIR$/ex-07-java-validador-cpf-regiao/pom.xml" />
-      </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/tarefa_01_revisao_java/java-conversor-idade/pom.xml" />
-      </set>
-    </option>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="ProjectType">
+    <option name="id" value="Android" />
   </component>
 </project>

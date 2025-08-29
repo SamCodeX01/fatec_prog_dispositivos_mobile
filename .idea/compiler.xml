@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="ex-05-java-gerador-senhas-atendimento" />
-        <module name="ex-06-java-calculadora-notas-mobile" />
-        <module name="ex-07-java-validador-cpf-regiao" />
-        <module name="ex-04-java-calculadora-imc" />
-        <module name="ex-03-java-gerador-numeros-unicos" />
-      </profile>
-    </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ex-01-java-conversor-idade" target="24" />
-      <module name="ex-02-java-calculo-hipotenusa" target="24" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="21" />
   </component>
 </project>
