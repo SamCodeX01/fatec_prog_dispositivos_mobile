@@ -1,8 +1,10 @@
 package com.example.tarefa_03_manipulacao_de_activitys;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,18 +12,28 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class Tela_02 extends AppCompatActivity {
 
+    Button btNext2;
+
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tela02);
 
-        new Handler().postDelayed(() ->{
-            startActivity(new Intent(MainActivity.this, Tela_01.class));
-            finish();
-        },4000);
+
+        btNext2 = findViewById(R.id.btNext2);
+
+        btNext2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tela_02.this, Tela_03.class);
+                startActivity(intent);
+            }
+        });
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -31,11 +43,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
-/*
-
-  Intent intent = new Intent(Exer_03.this, Exer_04.class);
-                startActivity(intent);
-
-
-* */
