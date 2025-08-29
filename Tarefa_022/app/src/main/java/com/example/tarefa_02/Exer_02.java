@@ -59,6 +59,13 @@ public class Exer_02 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btVoltar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_02.this,Exer_01.class);
+                startActivity(intent);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener((findViewById(android.R.id.content)), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

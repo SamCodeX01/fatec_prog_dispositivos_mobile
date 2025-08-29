@@ -22,26 +22,32 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btAvancar7x"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:width="80dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Avançar"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="619dp" />
-
-    <Button
         android:id="@+id/btVoltar7"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginBottom="64dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btAvancar7x"
-        tools:layout_editor_absoluteY="619dp" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btAvancar7x"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="64dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar7" />
 
     <Button
         android:id="@+id/btLimpar7"

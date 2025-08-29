@@ -1,6 +1,7 @@
 package com.example.tarefa_02;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -73,63 +74,85 @@ public class Exer_07 extends AppCompatActivity {
                         (digito2 == Character.getNumericValue(cpf.charAt(10)));
 
                 //System.out.println(valido ? "CPF válido!" : "CPF inválido (dígitos verificadores incorretos)");
-                Toast.makeText(Exer_07.this,(valido ? "CPF válido!" : "CPF inválido (dígitos verificadores incorretos)"),Toast.LENGTH_LONG).show();
+               // Toast.makeText(Exer_07.this,(valido ? "CPF válido!" : "CPF inválido (dígitos verificadores incorretos)"),Toast.LENGTH_LONG).show();
 
                 if(valido){
                     // Determinar região de emissão (8º dígito)
                     int regiao = Character.getNumericValue(cpf.charAt(8));
                     //System.out.println("Região de emissão: " + getRegiao(regiao));
-
+                    String regiaoStr = getRegiao(regiao);
+                    tvMostrarRegiao.setText("Região de emissão (" + regiao + "): " + regiaoStr);
+                   // tvMostrarRegiao.setText("Região de emissão: " + getRegiao(regiao));
+                    //tvMostrarRegiao.setText("Região de emissão: " + regiao);
                     //System.out.println("Dígitos verificadores: " + digito1 + digito2);
-                    Toast.makeText(Exer_07.this,("Dígitos verificadores: " + digito1 + digito2),Toast.LENGTH_LONG).show();
+                    //Toast.makeText(Exer_07.this,("Dígitos verificadores: " + digito1 + digito2),Toast.LENGTH_LONG).show();
+                    tvMostrarValidacao.setText("Dígitos verificadores: " + digito1 + digito2);
 
-
-                } else{
+                }
+                else{
                     //System.out.println("CPF inválido (dígitos verificadores incorretos)");
                     Toast.makeText(Exer_07.this,"CPF inválido (dígitos verificadores incorretos)",Toast.LENGTH_LONG).show();
                 }
             }
-            public void getRegiao(int codigo) {
+            public String getRegiao(int codigo) {
+                //String return;
                 switch (codigo) {
                     case 0:
-                        tvMostrarRegiao.setText("Rio Grande do Sul");
-                        break;
+                        return "Rio Grande do Sul";
                     case 1:
-                        tvMostrarRegiao.setText("Distrito Federal, Goiás, Mato Grosso, Mato Grosso do Sul e Tocantins");
-                        break;
+                        return "Distrito Federal, Goiás, Mato Grosso, Mato Grosso do Sul e Tocantins";
                     case 2:
-                        tvMostrarRegiao.setText("Amazonas, Pará, Roraima, Amapá, Acre e Rondônia");
-                        break;
+                        return "Amazonas, Pará, Roraima, Amapá, Acre e Rondônia";
                     case 3:
-                        tvMostrarRegiao.setText("Ceará, Maranhão e Piauí");
-                        break;
+                        return "Ceará, Maranhão e Piauí";
                     case 4:
-                        tvMostrarRegiao.setText("Paraíba, Pernambuco, Alagoas e Rio Grande do Norte");
-                        break;
+                        return "Paraíba, Pernambuco, Alagoas e Rio Grande do Norte";
                     case 5:
-                        tvMostrarRegiao.setText("Bahia e Sergipe");
-                        break;
+                        return "Bahia e Sergipe";
                     case 6:
-                        tvMostrarRegiao.setText("Minas Gerais");
-                        break;
+                        return "Minas Gerais";
                     case 7:
-                        tvMostrarRegiao.setText("Rio de Janeiro e Espírito Santo");
-                        break;
+                        return "Rio de Janeiro e Espírito Santo";
                     case 8:
-                        tvMostrarRegiao.setText("São Paulo");
-                        break;
+                        return "São Paulo";
                     case 9:
-                        tvMostrarRegiao.setText("Paraná e Santa Catarina");
-                        break;
+                        return "Paraná e Santa Catarina";
                     default:
-                        tvMostrarRegiao.setText("Região desconhecida");
-                        break;
+                        return "Região desconhecida";
                 }
+                //tvMostrarRegiao.setText("Região de emissão: " + return);
             }
         });
 
-
-
+        btLimpar7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tvMostrarRegiao.setText("");
+                tvMostrarValidacao.setText("");
+                edCpf.setText("");
+            }
+        });
+        btVoltar7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_07.this, Exer_06.class);
+                startActivity(intent);
+            }
+        });
+        btAvancarx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_07.this, Exer_01.class);
+                startActivity(intent);
+            }
+        });
+        btMenu7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Exer_07.this, Tela_Principal.class);
+                startActivity(intent);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
