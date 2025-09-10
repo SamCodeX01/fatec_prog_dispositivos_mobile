@@ -13,6 +13,19 @@
         android:theme="@style/Theme.Tarefa_03_mediafinal_imc"
         tools:targetApi="31">
         <activity
+            android:name=".CalculoImc"
+            android:exported="false" />
+        <activity
+            android:name=".CalculoMediaFinal"
+            android:exported="false" />
+        <activity
+            android:name=".TelaMenu"
+            android:exported="false"
+            android:theme="@style/Theme.Tarefa_03_mediafinal_imc" />
+        <activity
+            android:name=".TelaLogin"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
