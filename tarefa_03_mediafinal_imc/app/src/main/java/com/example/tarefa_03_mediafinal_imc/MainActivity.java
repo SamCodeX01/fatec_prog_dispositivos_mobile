@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() ->{
-            startActivity(new Intent(MainActivity.this, Tela_Principal.class));
+            startActivity(new Intent(MainActivity.this, TelaLogin.class));
             finish();
         },4000);
 

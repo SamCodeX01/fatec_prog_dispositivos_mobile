@@ -7,46 +7,63 @@
     android:layout_height="match_parent"
     tools:context=".TelaLogin">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="73dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edLogin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
+        android:hint="Login"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edSenha"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="382dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btAcessar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edLogin" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btAcessar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="511dp" />
+        android:layout_marginBottom="172dp"
+        android:text="Acessar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btFinalizarr"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btFinalizarr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="511dp" />
+        android:layout_marginTop="66dp"
+        android:text="Finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btAcessar"
+        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="179dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toTopOf="@+id/edLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_gov_icon_146024" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

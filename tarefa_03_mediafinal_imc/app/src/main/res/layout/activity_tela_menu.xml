@@ -8,26 +8,30 @@
     tools:context=".TelaMenu">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btFinalizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="204dp" />
+        android:text="Finalizar"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="606dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btCalcMediaFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="277dp" />
+        android:text="Calcular Média Final"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="216dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btCalcImc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="465dp" />
+        android:text="Calcular IMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="316dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
