@@ -27,7 +27,8 @@ public class TelaLogin extends AppCompatActivity {
 
         edLogin = findViewById(R.id.edLogin);
         edSenha = findViewById(R.id.edSenha);
-        btAcessar = findViewById(R.id.btFinalizarr);
+        btAcessar = findViewById(R.id.btAcessar);
+        btFinalizarr = findViewById(R.id.btFinalizarr);
 
         btAcessar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,10 +42,15 @@ public class TelaLogin extends AppCompatActivity {
                     startActivity(intent);
                 }
                  else{
-                    Toast.makeText(TelaLogin.this, "Digite a senha correta", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(TelaLogin.this, "A senha é -> Login: sam/ senha: 123", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TelaLogin.this, "Senha ou Login inválidos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TelaLogin.this, "Login: sam | senha: 123", Toast.LENGTH_SHORT).show();
                 }
-
+            }
+        });
+        btFinalizarr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

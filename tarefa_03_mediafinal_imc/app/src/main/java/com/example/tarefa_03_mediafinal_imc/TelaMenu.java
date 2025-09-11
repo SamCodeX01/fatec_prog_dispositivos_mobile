@@ -45,8 +45,9 @@ public class TelaMenu extends AppCompatActivity {
         btFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TelaMenu.this, CalculoImc.class);
-                startActivity(intent);
+//                finish();
+                finishAffinity(); // Finaliza todas as Activities do app
+
             }
         });
 

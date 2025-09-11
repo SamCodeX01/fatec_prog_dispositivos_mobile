@@ -1,5 +1,6 @@
 package com.example.tarefa_03_mediafinal_imc;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,8 +18,9 @@ public class CalculoMediaFinal extends AppCompatActivity {
 
     EditText edAtividades, edProva1, edTrabalhoT1, edTrabalhoT2,  edMultidisciplinar;
     TextView tvResultadoNota;
-    Button btLimpar6, btVoltar6, btMenu6, btAvancar6, btCalcularNota;
+    Button btLimparMediaFinal, btVoltarMediaFinal, btCalcularMediaFinal;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +33,11 @@ public class CalculoMediaFinal extends AppCompatActivity {
         edTrabalhoT2 = findViewById(R.id.edTrabalhoT2);
         edMultidisciplinar = findViewById(R.id.edAnoNascimento);
         tvResultadoNota = findViewById(R.id.tvResultadoNota);
-        btLimpar6 = findViewById(R.id.btLimpar7);
-        btVoltar6 = findViewById(R.id.btVoltar7);
-        btMenu6 = findViewById(R.id.btMenu7);
-        btAvancar6 = findViewById(R.id.btAvancar7x);
-        btCalcularNota = findViewById(R.id.btValidarCpf);
+        btLimparMediaFinal = findViewById(R.id.btLimparImc);
+        btVoltarMediaFinal = findViewById(R.id.btVoltarImc);
+        btCalcularMediaFinal = findViewById(R.id.btCalcularImc);
 
-        btCalcularNota.setOnClickListener(new View.OnClickListener() {
+        btCalcularMediaFinal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 double at, p1, t1, t2, m;
@@ -54,7 +54,7 @@ public class CalculoMediaFinal extends AppCompatActivity {
                 tvResultadoNota.setText("Nota Final: " + notaFinal);
             }
         });
-        btLimpar6.setOnClickListener(new View.OnClickListener() {
+        btLimparMediaFinal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 edAtividades.setText("");
@@ -62,26 +62,13 @@ public class CalculoMediaFinal extends AppCompatActivity {
                 edTrabalhoT1.setText("");
                 edTrabalhoT2.setText("");
                 edMultidisciplinar.setText("");
+                tvResultadoNota.setText("");
             }
         });
-        btVoltar6.setOnClickListener(new View.OnClickListener() {
+        btVoltarMediaFinal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Exer_06.this, Exer_05.class);
-                startActivity(intent);
-            }
-        });
-        btAvancar6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Exer_06.this, Exer_07.class);
-                startActivity(intent);
-            }
-        });
-        btMenu6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Exer_06.this, Tela_Principal.class);
+                Intent intent = new Intent(CalculoMediaFinal.this, TelaMenu.class);
                 startActivity(intent);
             }
         });

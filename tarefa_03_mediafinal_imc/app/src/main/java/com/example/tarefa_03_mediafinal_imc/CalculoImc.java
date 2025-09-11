@@ -1,5 +1,6 @@
 package com.example.tarefa_03_mediafinal_imc;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,9 +18,10 @@ import androidx.core.view.WindowInsetsCompat;
 public class CalculoImc extends AppCompatActivity {
 
     EditText edPeso, edAltura;
-    Button btCalcular, btLimpar, btVoltar;
-    TextView tvResultadoImc;
+    Button btCalcularImc, btLimparImc, btVoltarImc;
+    TextView tvMostrarImc;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +30,12 @@ public class CalculoImc extends AppCompatActivity {
 
         edPeso = findViewById(R.id.edCpf);
         edAltura = findViewById(R.id.edMesNascimento);
-        btCalcular = findViewById(R.id.btValidarCpf);
-        btLimpar = findViewById(R.id.btLimpar);
-        btVoltar = findViewById(R.id.btVoltar);
-        tvResultadoImc = findViewById(R.id.tvMostrarRegiao);
+        btCalcularImc = findViewById(R.id.btCalcularImc);
+        btLimparImc = findViewById(R.id.btLimparImc);
+        btVoltarImc = findViewById(R.id.btVoltarImc);
+        tvMostrarImc = findViewById(R.id.tvMostrarImc);
 
-        btCalcular.setOnClickListener(new View.OnClickListener() {
+        btCalcularImc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 double imc, peso, altura;
@@ -45,38 +47,38 @@ public class CalculoImc extends AppCompatActivity {
 
                 System.out.printf("Seu imc calculado: %.2f%n", imc);
 
-                tvResultadoImc.setText("Seu imc calculado é: " + imc);
+                tvMostrarImc.setText("Seu imc calculado é: " + imc);
 
                 if (imc < 18.5) {
-                    Toast.makeText(Exer_04.this,"Abaixo do peso!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(CalculoImc.this,"Abaixo do peso!",Toast.LENGTH_LONG).show();
                 } else if (imc >= 18.5 && imc <= 24.9) {
-                    Toast.makeText(Exer_04.this,"Peso normal!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(CalculoImc.this,"Peso normal!",Toast.LENGTH_LONG).show();
                 } else if (imc >= 25 && imc <= 29.9) {
-                    Toast.makeText(Exer_04.this,"Sobrepeso!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(CalculoImc.this,"Sobrepeso!",Toast.LENGTH_LONG).show();
                 } else if (imc >= 30 && imc < 34.9) {
-                    Toast.makeText(Exer_04.this,"Obesidade grau I!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(CalculoImc.this,"Obesidade grau I!",Toast.LENGTH_LONG).show();
                 } else if (imc >= 35 && imc <= 39.9) {
-                    Toast.makeText(Exer_04.this,"Obesidade grau II!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(CalculoImc.this,"Obesidade grau II!",Toast.LENGTH_LONG).show();
                 } else if (imc >= 40) {
-                    Toast.makeText(Exer_04.this,"Obesidade grau III ou mórbida!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CalculoImc.this,"Obesidade grau III ou mórbida!",Toast.LENGTH_SHORT).show();
                 }
             }
 
         });
 
-        btLimpar.setOnClickListener(new View.OnClickListener() {
+        btLimparImc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 edPeso.setText("");
                 edAltura.setText("");
-                tvResultadoImc.setText("");
+                tvMostrarImc.setText("");
             }
         });
 
-        btVoltar.setOnClickListener(new View.OnClickListener() {
+        btVoltarImc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Exer_04.this, Exer_03.class);
+                Intent intent = new Intent(CalculoImc.this, CalculoMediaFinal.class);
                 startActivity(intent);
             }
         });

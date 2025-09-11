@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btLimpar7"
+        android:id="@+id/btLimparImc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
@@ -44,23 +44,23 @@
         android:gravity="center"
         android:text="Limpar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btValidarCpf"
+        app:layout_constraintStart_toEndOf="@+id/btCalcularImc"
         app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
 
     <Button
-        android:id="@+id/btValidarCpf"
+        android:id="@+id/btCalcularImc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Converter"
-        app:layout_constraintEnd_toStartOf="@+id/btLimpar7"
+        app:layout_constraintEnd_toStartOf="@+id/btLimparImc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
 
     <TextView
-        android:id="@+id/tvMostrarRegiao"
+        android:id="@+id/tvMostrarImc"
         android:layout_width="220dp"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btValidarCpf" />
+        app:layout_constraintTop_toBottomOf="@+id/btCalcularImc" />
 
     <EditText
         android:id="@+id/edMesNascimento"
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edCpf" />
 
     <Button
-        android:id="@+id/btVoltar7"
+        android:id="@+id/btVoltarImc"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginStart="144dp"
@@ -99,6 +99,6 @@
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMostrarRegiao" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarImc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
