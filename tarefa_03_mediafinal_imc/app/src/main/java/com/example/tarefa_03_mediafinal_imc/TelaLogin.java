@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,8 +32,18 @@ public class TelaLogin extends AppCompatActivity {
         btAcessar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TelaLogin.this, TelaMenu.class);
-                startActivity(intent);
+                    String login, senha;
+                    login = edLogin.getText().toString();
+                    senha = edSenha.getText().toString();
+
+                if(login.equals("sam") && senha.equals("123")){
+                    Intent intent = new Intent(TelaLogin.this, TelaMenu.class);
+                    startActivity(intent);
+                }
+                 else{
+                    Toast.makeText(TelaLogin.this, "Digite a senha correta", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TelaLogin.this, "A senha é -> Login: sam/ senha: 123", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
