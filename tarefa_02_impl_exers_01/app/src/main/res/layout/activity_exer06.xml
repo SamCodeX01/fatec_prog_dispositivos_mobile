@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Exer_06"
+>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="54dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Exercício 06: Calculador de Nota Final"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/edAtividades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLimpar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Limpar"
+        app:layout_constraintBottom_toTopOf="@+id/btValidarCpf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
+
+    <Button
+        android:id="@+id/btValidarCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Calcular Nota"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultadoNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLimpar7" />
+
+    <TextView
+        android:id="@+id/tvResultadoNota"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btAvancar7x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btValidarCpf" />
+
+    <EditText
+        android:id="@+id/edAnoNascimento"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite a nota Multidisciplinar (M): "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btLimpar7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTrabalhoT2" />
+
+    <EditText
+        android:id="@+id/edTrabalhoT2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite a nota do Trabalho 2 (T2): "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edAnoNascimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTrabalhoT1" />
+
+    <EditText
+        android:id="@+id/edTrabalhoT1"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite a nota do Trabalho 1 (T1): "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edTrabalhoT2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edProva1" />
+
+    <EditText
+        android:id="@+id/edProva1"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite a nota da Prova 1 (P1): "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edTrabalhoT1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAtividades" />
+
+    <EditText
+        android:id="@+id/edAtividades"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#D51010"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite a nota das Atividades (At): "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edProva1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btAvancar7x"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btMenu7" />
+
+    <Button
+        android:id="@+id/btMenu7"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="MENU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar7x"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar7" />
+
+    <Button
+        android:id="@+id/btVoltar7"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btMenu7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

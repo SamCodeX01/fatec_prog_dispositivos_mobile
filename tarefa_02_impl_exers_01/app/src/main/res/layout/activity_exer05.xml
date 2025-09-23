@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exer_05">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="54dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Exercício 05: Gerador de Senhas"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvMostrarRegiao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btLimpar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Limpar"
+        app:layout_constraintBottom_toTopOf="@+id/tvSenhaGerada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btValidarCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Gerar Senha"
+        app:layout_constraintBottom_toTopOf="@+id/tvSenhaGerada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvMostrarRegiao"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="81dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text='Escolha o tipo de atendimento:'
+        app:layout_constraintBottom_toTopOf="@+id/Caixa_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/Atendimento_2"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="81dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text='2 - Atendimento'
+        app:layout_constraintBottom_toTopOf="@+id/Abertura_Conta_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caixa_1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/Abertura_Conta_3"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="81dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text='3 - Abertura de Conta'
+        app:layout_constraintBottom_toTopOf="@+id/Atendimento_Preferencial_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Atendimento_2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/Atendimento_Preferencial_4"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="81dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text='4 - Atendimento Preferencial'
+        app:layout_constraintBottom_toTopOf="@+id/Caixa_Preferencial_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Abertura_Conta_3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/Caixa_Preferencial_5"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="81dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text='5 - Caixa Preferencial '
+        app:layout_constraintBottom_toTopOf="@+id/edAnoNascimento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Atendimento_Preferencial_4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvSenhaGerada"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="78dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultadoNota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLimpar7"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvResultadoNota"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="78dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btAvancar7x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSenhaGerada"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/Caixa_1"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="81dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text='1 - Caixa'
+        app:layout_constraintBottom_toTopOf="@+id/Atendimento_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarRegiao"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/edAnoNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite aqui uma opção..."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btLimpar7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caixa_Preferencial_5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btAvancar7x"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btMenu7" />
+
+    <Button
+        android:id="@+id/btMenu7"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="MENU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar7x"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar7" />
+
+    <Button
+        android:id="@+id/btVoltar7"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btMenu7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
