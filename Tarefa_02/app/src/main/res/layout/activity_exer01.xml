@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exer_01">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="55dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Exercício 01: Java Conversor Idade"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLimpar1"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="79dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Limpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btConverter"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
+
+    <Button
+        android:id="@+id/btConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="29dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Converter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAnoNascimento" />
+
+    <EditText
+        android:id="@+id/edCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Dia do seu nascimento: "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edMesNascimento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edMesNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint='Mês do nascimento: '
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edAnoNascimento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCpf" />
+
+    <EditText
+        android:id="@+id/edAnoNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Ano do seu nascimento: "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btLimpar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
+
+    <TextView
+        android:id="@+id/tvMostrarRegiao"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="146dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tvMostrarMeses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLimpar1" />
+
+    <TextView
+        android:id="@+id/tvMostrarDias"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="146dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btMenu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarMeses" />
+
+    <TextView
+        android:id="@+id/tvMostrarMeses"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="146dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvMostrarDias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarRegiao" />
+
+    <Button
+        android:id="@+id/btAvancar7x"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btMenu1" />
+
+    <Button
+        android:id="@+id/btMenu1"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:width="80dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="MENU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btAvancar7x"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btVoltar1" />
+
+    <Button
+        android:id="@+id/btVoltar1"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btMenu1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

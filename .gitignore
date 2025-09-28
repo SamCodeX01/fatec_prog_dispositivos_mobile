@@ -1,0 +1,18 @@
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle
+.gradle/
+build/
+app/build/
+tarefa_03_mediafinal_imc/app/build/
+tarefa_03_mediafinal_imc/build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos locais
+local.properties
