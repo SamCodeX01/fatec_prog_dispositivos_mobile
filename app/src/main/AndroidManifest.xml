@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho1_Sistema_Venda_Passagens_Rodoviarias">
         <activity
+            android:name=".Tela_01_login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
