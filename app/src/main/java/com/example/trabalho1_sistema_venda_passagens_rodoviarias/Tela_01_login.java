@@ -1,4 +1,4 @@
-package com.example.trabalho1_sistema_venda_passagens_rodoviarias;
+ package com.example.trabalho1_sistema_venda_passagens_rodoviarias;
 
 import android.os.Bundle;
 
