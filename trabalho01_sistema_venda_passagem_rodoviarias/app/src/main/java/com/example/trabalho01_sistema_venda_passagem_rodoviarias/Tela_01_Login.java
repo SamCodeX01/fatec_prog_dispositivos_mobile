@@ -42,7 +42,7 @@ public class Tela_01_Login extends AppCompatActivity {
                             "Preencha login e senha!", Toast.LENGTH_SHORT).show();
                 } else {
                     // Login válido, ir para tela de assentos
-                    Intent intent = new Intent(Tela_01_Login.this, Tela_04_assentos.class);
+                    Intent intent = new Intent(Tela_01_Login.this, Tela_02_Data_Origem_Destino.class);
                     startActivity(intent);
                 }
             }

@@ -70,53 +70,53 @@ public class Tela_06_Lista_Passageiros extends AppCompatActivity {
             }
         });
 
-
-        private void carregarPassageiros () {
-            int passageiroCount = preferences.getInt("passageiro_count", 0);
-
-            for (int i = 0; i < passageiroCount; i++) {
-                String nome = preferences.getString("nome_" + i, "");
-                String documento = preferences.getString("documento_" + i, "");
-
-                CardView cardView = new CardView(this);
-                CardView.LayoutParams cardParams = new CardView.LayoutParams(
-                        CardView.LayoutParams.MATCH_PARENT,
-                        CardView.LayoutParams.WRAP_CONTENT
-                );
-                cardParams.setMargins(0, 0, 0, 8);
-                cardView.setLayoutParams(cardParams);
-                cardView.setCardElevation(4);
-                cardView.setRadius(4);
-
-                LinearLayout layout = new LinearLayout(this);
-                layout.setOrientation(LinearLayout.VERTICAL);
-                layout.setPadding(16, 16, 16, 16);
-
-                TextView tvNome = new TextView(this);
-                tvNome.setText("Nome: " + nome);
-                tvNome.setTextSize(14);
-
-                TextView tvDocumento = new TextView(this);
-                tvDocumento.setText("Documento: " + documento);
-                tvDocumento.setTextSize(12);
-                tvDocumento.setTextColor(Color.GRAY);
-
-                layout.addView(tvNome);
-                layout.addView(tvDocumento);
-                cardView.addView(layout);
-
-                containerPassageiros.addView(cardView);
-            }
-        }
-
         ViewCompat.setOnApplyWindowInsetsListener(
 
-    findViewById(R.id.main), (v,insets)->
+                findViewById(R.id.main), (v, insets) ->
 
-    {
-        Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-        v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-        return insets;
-    });
- }
+                {
+                    Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                    v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                    return insets;
+                });
+
+    } // FIM DO onCreate()
+
+    public void carregarPassageiros() {
+        int passageiroCount = preferences.getInt("passageiro_count", 0);
+
+        for (int i = 0; i < passageiroCount; i++) {
+            String nome = preferences.getString("nome_" + i, "");
+            String documento = preferences.getString("documento_" + i, "");
+
+            CardView cardView = new CardView(this);
+            CardView.LayoutParams cardParams = new CardView.LayoutParams(
+                    CardView.LayoutParams.MATCH_PARENT,
+                    CardView.LayoutParams.WRAP_CONTENT
+            );
+            cardParams.setMargins(0, 0, 0, 8);
+            cardView.setLayoutParams(cardParams);
+            cardView.setCardElevation(4);
+            cardView.setRadius(4);
+
+            LinearLayout layout = new LinearLayout(this);
+            layout.setOrientation(LinearLayout.VERTICAL);
+            layout.setPadding(16, 16, 16, 16);
+
+            TextView tvNome = new TextView(this);
+            tvNome.setText("Nome: " + nome);
+            tvNome.setTextSize(14);
+
+            TextView tvDocumento = new TextView(this);
+            tvDocumento.setText("Documento: " + documento);
+            tvDocumento.setTextSize(12);
+            tvDocumento.setTextColor(Color.GRAY);
+
+            layout.addView(tvNome);
+            layout.addView(tvDocumento);
+            cardView.addView(layout);
+
+            containerPassageiros.addView(cardView);
+        }
+    }
 }
