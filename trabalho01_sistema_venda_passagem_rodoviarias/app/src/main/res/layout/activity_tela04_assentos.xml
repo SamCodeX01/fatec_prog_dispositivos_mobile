@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_04_assentos">
+
+    <TextView
+        android:id="@+id/seats1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/seats2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats1"
+        app:layout_constraintTop_toBottomOf="@+id/seats1" />
+
+    <TextView
+        android:id="@+id/seats3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats2"
+        app:layout_constraintTop_toBottomOf="@+id/seats2" />
+
+    <TextView
+        android:id="@+id/seats4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats3"
+        app:layout_constraintTop_toBottomOf="@+id/seats3" />
+
+    <TextView
+        android:id="@+id/seats5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats4"
+        app:layout_constraintTop_toBottomOf="@+id/seats4" />
+
+    <TextView
+        android:id="@+id/seats6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats5"
+        app:layout_constraintTop_toBottomOf="@+id/seats5" />
+
+    <TextView
+        android:id="@+id/seats7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats6"
+        app:layout_constraintTop_toBottomOf="@+id/seats6" />
+
+    <TextView
+        android:id="@+id/seats8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats7"
+        app:layout_constraintTop_toBottomOf="@+id/seats7" />
+
+    <TextView
+        android:id="@+id/seats9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats8"
+        app:layout_constraintTop_toBottomOf="@+id/seats8" />
+
+    <TextView
+        android:id="@+id/seats10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/seats9"
+        app:layout_constraintTop_toBottomOf="@+id/seats9" />
+
+    <TextView
+        android:id="@+id/seats11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats1"
+        app:layout_constraintStart_toEndOf="@+id/seats1" />
+
+    <TextView
+        android:id="@+id/seats12"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats2"
+        app:layout_constraintStart_toStartOf="@+id/seats11" />
+
+    <TextView
+        android:id="@+id/seats13"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats3"
+        app:layout_constraintStart_toStartOf="@+id/seats12" />
+
+    <TextView
+        android:id="@+id/seats14"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats4"
+        app:layout_constraintStart_toStartOf="@+id/seats13" />
+
+    <TextView
+        android:id="@+id/seats15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats5"
+        app:layout_constraintStart_toStartOf="@+id/seats14" />
+
+    <TextView
+        android:id="@+id/seats16"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats6"
+        app:layout_constraintStart_toStartOf="@+id/seats15" />
+
+    <TextView
+        android:id="@+id/seats17"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats7"
+        app:layout_constraintStart_toStartOf="@+id/seats16" />
+
+    <TextView
+        android:id="@+id/seats18"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats8"
+        app:layout_constraintStart_toStartOf="@+id/seats17" />
+
+    <TextView
+        android:id="@+id/seats19"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats9"
+        app:layout_constraintStart_toStartOf="@+id/seats18" />
+
+    <TextView
+        android:id="@+id/seats20"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats10"
+        app:layout_constraintStart_toStartOf="@+id/seats19" />
+
+    <TextView
+        android:id="@+id/seats21"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats11"
+        app:layout_constraintEnd_toStartOf="@+id/seats31" />
+
+    <TextView
+        android:id="@+id/seats22"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats12"
+        app:layout_constraintStart_toStartOf="@+id/seats21" />
+
+    <TextView
+        android:id="@+id/seats23"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats13"
+        app:layout_constraintStart_toStartOf="@+id/seats22" />
+
+    <TextView
+        android:id="@+id/seats24"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats14"
+        app:layout_constraintStart_toStartOf="@+id/seats23" />
+
+    <TextView
+        android:id="@+id/seats25"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats15"
+        app:layout_constraintStart_toStartOf="@+id/seats24" />
+
+    <TextView
+        android:id="@+id/seats26"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats16"
+        app:layout_constraintStart_toStartOf="@+id/seats25" />
+
+    <TextView
+        android:id="@+id/seats27"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats17"
+        app:layout_constraintStart_toStartOf="@+id/seats26" />
+
+    <TextView
+        android:id="@+id/seats28"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats18"
+        app:layout_constraintStart_toStartOf="@+id/seats27" />
+
+    <TextView
+        android:id="@+id/seats29"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats19"
+        app:layout_constraintStart_toStartOf="@+id/seats28" />
+
+    <TextView
+        android:id="@+id/seats30"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats20"
+        app:layout_constraintStart_toStartOf="@+id/seats29" />
+
+    <TextView
+        android:id="@+id/seats31"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats21"
+        app:layout_constraintEnd_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/seats32"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats22"
+        app:layout_constraintStart_toStartOf="@+id/seats31" />
+
+    <TextView
+        android:id="@+id/seats33"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats23"
+        app:layout_constraintStart_toStartOf="@+id/seats32" />
+
+    <TextView
+        android:id="@+id/seats34"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats24"
+        app:layout_constraintStart_toStartOf="@+id/seats33" />
+
+    <TextView
+        android:id="@+id/seats35"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats25"
+        app:layout_constraintStart_toStartOf="@+id/seats34" />
+
+    <TextView
+        android:id="@+id/seats36"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats26"
+        app:layout_constraintStart_toStartOf="@+id/seats35" />
+
+    <TextView
+        android:id="@+id/seats37"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats27"
+        app:layout_constraintStart_toStartOf="@+id/seats36" />
+
+    <TextView
+        android:id="@+id/seats38"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats28"
+        app:layout_constraintStart_toStartOf="@+id/seats37" />
+
+    <TextView
+        android:id="@+id/seats39"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats29"
+        app:layout_constraintStart_toStartOf="@+id/seats38" />
+
+    <TextView
+        android:id="@+id/seats40"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seats30"
+        app:layout_constraintStart_toStartOf="@+id/seats39" />
+
+    <TextView
+        android:id="@+id/tvDisponivel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#2A9B15"
+        app:layout_constraintEnd_toStartOf="@+id/tvReservado"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOcupado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#FFFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvReservado"
+        app:layout_constraintTop_toTopOf="@+id/tvReservado" />
+
+    <TextView
+        android:id="@+id/tvReservado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#A020F0"
+        app:layout_constraintEnd_toStartOf="@+id/tvOcupado"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDisponivel"
+        app:layout_constraintTop_toTopOf="@+id/tvDisponivel" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Disponível"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDisponivel"
+        app:layout_constraintStart_toStartOf="@+id/tvDisponivel"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisponivel" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Reservado"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvReservado"
+        app:layout_constraintStart_toStartOf="@+id/tvReservado"
+        app:layout_constraintTop_toBottomOf="@+id/tvReservado" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ocupado"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOcupado"
+        app:layout_constraintStart_toStartOf="@+id/tvOcupado"
+        app:layout_constraintTop_toBottomOf="@+id/tvOcupado" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Valor total:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btConfirmarReserva"
+        app:layout_constraintEnd_toEndOf="@+id/btConfirmarReserva" />
+
+    <Button
+        android:id="@+id/btConfirmarReserva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#0F1C97"
+        android:text="Confirmar Reserva"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/seats35"
+        app:layout_constraintStart_toStartOf="@+id/seats10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

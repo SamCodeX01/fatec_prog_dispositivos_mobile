@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="disponivel">#2A9B15</color>    <!-- Verde -->
+    <color name="reservado">#A020F0</color>     <!-- Roxo -->
+    <color name="ocupado">#FFFF00</color>       <!-- Amarelo -->
 </resources>

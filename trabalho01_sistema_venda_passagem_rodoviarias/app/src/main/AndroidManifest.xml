@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho01_sistema_venda_passagem_rodoviarias">
         <activity
+            android:name=".Tela_04_assentos"
+            android:exported="false" />
+        <activity
             android:name=".Tela_01_Login"
             android:exported="false" />
         <activity
