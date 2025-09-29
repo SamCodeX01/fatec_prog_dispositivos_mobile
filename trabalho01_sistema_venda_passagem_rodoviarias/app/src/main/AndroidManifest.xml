@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho01_sistema_venda_passagem_rodoviarias">
         <activity
+            android:name=".Tela_07_QrCode"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_06_Lista_Passageiros"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_05_Passageiros"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_03_Horario_Destino"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_02_Data_Origem_Destino"
+            android:exported="false" />
+        <activity
             android:name=".Tela_04_assentos"
             android:exported="false" />
         <activity
