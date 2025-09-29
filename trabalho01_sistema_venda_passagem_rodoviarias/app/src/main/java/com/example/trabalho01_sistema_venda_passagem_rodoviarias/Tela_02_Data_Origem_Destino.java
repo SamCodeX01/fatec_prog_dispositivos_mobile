@@ -66,8 +66,7 @@ public class Tela_02_Data_Origem_Destino extends AppCompatActivity {
                     return;
                 }
 
-                Intent intent = new Intent(Tela_02_Data_Origem_Destino.this,
-                        Tela_03_Horario_Destino.class);
+                Intent intent = new Intent(Tela_02_Data_Origem_Destino.this, Tela_03_Horario_Destino.class);
                 intent.putExtra("origem", origem);
                 intent.putExtra("destino", destino);
                 intent.putExtra("data", data);

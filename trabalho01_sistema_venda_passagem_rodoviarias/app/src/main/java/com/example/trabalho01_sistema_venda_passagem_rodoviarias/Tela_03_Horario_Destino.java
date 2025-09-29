@@ -15,13 +15,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Tela_03_Horario_Destino extends AppCompatActivity {
-    Intent intent = new Intent(this, Tela_04_assentos.class);
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_tela03_horario_destino);
+
+        intent = new Intent(this, Tela_04_assentos.class);
 
          TextView tvOrigem, tvDestino, tvData;
          Spinner spinnerHorarios, spinnerEmpresas;
@@ -35,7 +37,6 @@ public class Tela_03_Horario_Destino extends AppCompatActivity {
                 "Cometa", "Itapemirim", "Gontijo", "Util", "Kaissara", "Expresso Brasileiro"
         };
 
-
         // Inicializar componentes
         tvOrigem = findViewById(R.id.tvOrigem);
         tvDestino = findViewById(R.id.tvDestino);
@@ -44,8 +45,8 @@ public class Tela_03_Horario_Destino extends AppCompatActivity {
         spinnerEmpresas = findViewById(R.id.spinnerEmpresas);
         btnContinuar = findViewById(R.id.btnContinuar);
 
-        intent.putExtra("horario", spinnerHorarios.getSelectedItem().toString());
-        startActivity(intent);
+//        intent.putExtra("horario", spinnerHorarios.getSelectedItem().toString());
+//        startActivity(intent);
 
         // Receber dados da tela anterior
         Intent intent = getIntent();
