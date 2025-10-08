@@ -59,6 +59,7 @@ public class Tela_02_Data_Origem_Destino extends AppCompatActivity {
                 int ano = datePicker.getYear();
 
                 String data = String.format("%02d/%02d/%d", dia, mes, ano);
+                Dados.data = data;
 
                 if (origem.equals(destino)) {
                     Toast.makeText(Tela_02_Data_Origem_Destino.this,

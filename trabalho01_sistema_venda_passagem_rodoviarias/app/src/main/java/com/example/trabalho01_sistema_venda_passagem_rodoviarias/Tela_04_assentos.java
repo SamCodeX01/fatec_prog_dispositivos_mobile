@@ -1,5 +1,6 @@
 package com.example.trabalho01_sistema_venda_passagem_rodoviarias;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -72,6 +73,8 @@ public class Tela_04_assentos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 confirmarReserva();
+                Intent intent = new Intent(Tela_04_assentos.this, Tela_05_Passageiros.class);
+                startActivity(intent);
             }
         });
     }
@@ -227,26 +230,37 @@ public class Tela_04_assentos extends AppCompatActivity {
 
         Log.d("DEBUG_CARREGAR", "=== CARREGANDO ESTADOS ===");
 
+//        for (int i = 0; i < 40; i++) {
+//            String estadoSalvo = preferences.getString("assento_" + i, "disponivel");
+//            statusAssentos[i] = estadoSalvo;
+//
+//            Log.d("DEBUG_CARREGAR", "Assento " + (i + 1) + " - Estado salvo: " + estadoSalvo);
+//
+//            if ("reservado".equals(estadoSalvo)) {
+//                assentosReservados++;
+//                reservadoCount++;
+//            } else if ("disponivel".equals(estadoSalvo)) {
+//                disponivelCount++;
+//            } else if ("ocupado".equals(estadoSalvo)) {
+//                ocupadoCount++;
+//            } else {
+//                // Se for null ou qualquer outro valor, define como disponível
+//                statusAssentos[i] = "disponivel";
+//                disponivelCount++;
+//                Log.w("DEBUG_CARREGAR", "Assento " + (i + 1) + " com estado inválido: " + estadoSalvo + " -> convertido para DISPONÍVEL");
+//            }
+//        }
+
+        // EM VEZ DISSO, sempre inicializar como disponível:
         for (int i = 0; i < 40; i++) {
-            String estadoSalvo = preferences.getString("assento_" + i, "disponivel");
-            statusAssentos[i] = estadoSalvo;
-
-            Log.d("DEBUG_CARREGAR", "Assento " + (i + 1) + " - Estado salvo: " + estadoSalvo);
-
-            if ("reservado".equals(estadoSalvo)) {
-                assentosReservados++;
-                reservadoCount++;
-            } else if ("disponivel".equals(estadoSalvo)) {
-                disponivelCount++;
-            } else if ("ocupado".equals(estadoSalvo)) {
-                ocupadoCount++;
-            } else {
-                // Se for null ou qualquer outro valor, define como disponível
-                statusAssentos[i] = "disponivel";
-                disponivelCount++;
-                Log.w("DEBUG_CARREGAR", "Assento " + (i + 1) + " com estado inválido: " + estadoSalvo + " -> convertido para DISPONÍVEL");
-            }
+            statusAssentos[i] = "disponivel";
+            disponivelCount++;
+            Log.d("DEBUG_CARREGAR", "Assento " + (i + 1) + " - Inicializado como: disponivel");
         }
+
+        // Ainda carrega a contagem de reservados do SharedPreferences se quiser
+        // mas como estamos resetando os assentos, também resetamos a contagem
+        assentosReservados = 0;
 
         Log.d("DEBUG_CARREGAR", "=== RESUMO CARREGAMENTO ===");
         Log.d("DEBUG_CARREGAR", "Disponivel: " + disponivelCount);
@@ -256,6 +270,35 @@ public class Tela_04_assentos extends AppCompatActivity {
     }
 
     private void confirmarReserva() {
+//        if (assentosReservados > 0) {
+//            Log.d("DEBUG_CONFIRMAR", "Confirmando reserva de " + assentosReservados + " assentos");
+//
+//            // Mudar todos os reservados para ocupados
+//            for (int i = 0; i < 40; i++) {
+//                if ("reservado".equals(statusAssentos[i])) {
+//                    statusAssentos[i] = "ocupado";
+//                    Log.d("DEBUG_CONFIRMAR", "Assento " + (i + 1) + " -> OCUPADO");
+//                }
+//            }
+//
+//            aplicarCores();
+//            salvarEstados();
+//
+//            // Mostrar mensagem de sucesso
+//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//            builder.setTitle("Reserva Confirmada!")
+//                    .setMessage(assentosReservados + " assentos reservados com sucesso!\nTotal: R$ " +
+//                            String.format("%.2f", (assentosReservados * valorPorAssento)))
+//                    .setPositiveButton("OK", null)
+//                    .show();
+//
+//            // Resetar contagem
+//            assentosReservados = 0;
+//            salvarEstados(); // Salvar o novo estado
+//            atualizarValorTotal();
+//
+//            Log.d("DEBUG_CONFIRMAR", "Reserva confirmada e contagem resetada");
+//        }
         if (assentosReservados > 0) {
             Log.d("DEBUG_CONFIRMAR", "Confirmando reserva de " + assentosReservados + " assentos");
 
@@ -270,11 +313,29 @@ public class Tela_04_assentos extends AppCompatActivity {
             aplicarCores();
             salvarEstados();
 
+            // Calcular valor total
+            double valorTotal = assentosReservados * valorPorAssento;
+
+            // Ir para próxima tela PASSANDO OS DADOS
+            Intent intent = new Intent(Tela_04_assentos.this, Tela_05_Passageiros.class);
+
+            // Pegar dados da tela anterior
+            Intent intentAnterior = getIntent();
+            intent.putExtra("origem", intentAnterior.getStringExtra("origem"));
+            intent.putExtra("destino", intentAnterior.getStringExtra("destino"));
+            intent.putExtra("data", intentAnterior.getStringExtra("data"));
+            intent.putExtra("horario", intentAnterior.getStringExtra("horario"));
+            intent.putExtra("empresa", intentAnterior.getStringExtra("empresa"));
+            intent.putExtra("valor", valorTotal);
+            intent.putExtra("assentos_reservados", assentosReservados);
+
+            startActivity(intent);
+
             // Mostrar mensagem de sucesso
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Reserva Confirmada!")
                     .setMessage(assentosReservados + " assentos reservados com sucesso!\nTotal: R$ " +
-                            String.format("%.2f", (assentosReservados * valorPorAssento)))
+                            String.format("%.2f", valorTotal))
                     .setPositiveButton("OK", null)
                     .show();
 
