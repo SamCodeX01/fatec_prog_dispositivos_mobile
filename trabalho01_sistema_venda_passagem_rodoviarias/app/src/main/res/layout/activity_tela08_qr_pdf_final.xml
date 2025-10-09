@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Cabeçalho -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSAGEM RODOVIÁRIA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="16dp" />
+
+        <!-- QR Code -->
+        <ImageView
+            android:id="@+id/ivQrCode"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Informações da Passagem -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvInformacoesPassagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botões de Ação -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnGerarPDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📄 Salvar como PDF"
+                android:textSize="16sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnCompartilhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📤 Compartilhar Passagem"
+                android:textSize="16sp"
+                android:backgroundTint="#2196F3"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnFinalizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏠 Voltar ao Início"
+                android:textSize="16sp"
+                android:backgroundTint="#FF9800"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pronto para gerar sua passagem"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
