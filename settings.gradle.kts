@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "tarefa_06_app_agenda_de_contatos"
 include(":app")
+include(":app")
  
