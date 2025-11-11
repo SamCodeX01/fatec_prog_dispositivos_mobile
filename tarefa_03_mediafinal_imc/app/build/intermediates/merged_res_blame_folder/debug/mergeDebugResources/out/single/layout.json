@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-mergeDebugResources-45:\\layout\\activity_tela_menu.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-main-48:\\layout\\activity_tela_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-mergeDebugResources-45:\\layout\\activity_calculo_imc.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-main-48:\\layout\\activity_calculo_imc.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-mergeDebugResources-45:\\layout\\activity_tela_login.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-main-48:\\layout\\activity_tela_login.xml"
+    },
+    {
+        "merged": "com.example.tarefa_03_mediafinal_imc.app-mergeDebugResources-45:/layout/activity_tela_menu.xml",
+        "source": "com.example.tarefa_03_mediafinal_imc.app-main-48:/layout/activity_tela_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-mergeDebugResources-45:\\layout\\activity_calculo_media_final.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-main-48:\\layout\\activity_calculo_media_final.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.13\\com.example.tarefa_03_mediafinal_imc.app-main-48:\\layout\\activity_main.xml"
+    }
+]

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculoImc">
+
+    <EditText
+        android:id="@+id/edCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Digite seu peso:"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Exercício 04: Cálculo IMC"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLimparImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Limpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btCalcularImc"
+        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
+
+    <Button
+        android:id="@+id/btCalcularImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Converter"
+        app:layout_constraintEnd_toStartOf="@+id/btLimparImc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edMesNascimento" />
+
+    <TextView
+        android:id="@+id/tvMostrarImc"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:background="#C4ACED"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalcularImc" />
+
+    <EditText
+        android:id="@+id/edMesNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint='Digite sua altura: '
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCpf" />
+
+    <Button
+        android:id="@+id/btVoltarImc"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="100dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarImc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
