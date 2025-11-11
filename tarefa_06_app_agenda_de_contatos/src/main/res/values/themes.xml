@@ -1,9 +1,0 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Tarefa_06_app_agenda_de_contatos" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
-
-    <style name="Theme.Tarefa_06_app_agenda_de_contatos" parent="Base.Theme.Tarefa_06_app_agenda_de_contatos" />
-</resources>
