@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Verificador de Seguro-Desemprego"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTempoTrabalho"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Meses trabalhados nos últimos 36 meses"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/textTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editSalario"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Último salário (R$)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTempoTrabalho" />
+
+    <CheckBox
+        android:id="@+id/checkDemissaoSemJustaCausa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Demitido sem justa causa"
+        app:layout_constraintTop_toBottomOf="@+id/editSalario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Verificar Direito"
+        app:layout_constraintTop_toBottomOf="@+id/checkDemissaoSemJustaCausa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="16sp"
+        android:text="Preencha os dados acima"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#f0f0f0"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
